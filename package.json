@@ -1,0 +1,17 @@
+{
+  "name": "js-and-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "Backend",
+    "Code",
+    "Chai"
+  ],
+  "author": "Manisha Prajapati",
+  "license": "ISC"
+}
