@@ -79,4 +79,4 @@ Basic set of operations that can be used to interact with server
 500 - Internal Server Error
 504 - Gateway time out
 
-#
+#Middle Ware :- Before send the request we "check" somethings. The Check is called Middleare (Jaate hue mujhse mil ke jaana).
