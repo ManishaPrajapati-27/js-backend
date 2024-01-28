@@ -80,3 +80,16 @@ Basic set of operations that can be used to interact with server
 504 - Gateway time out
 
 #Middle Ware :- Before send the request we "check" somethings. The Check is called Middleare (Jaate hue mujhse mil ke jaana).
+
+# Use of Postman 
+    - Make new Collection
+    - Make new Environment
+    - Give name to environment then use it
+    - {{}} use variable in double curly brac
+    - Save 
+
+About Database Information
+/** Database always present in onather Continents **/
+
+1. If data is comes late then use await always.
+2. Remember always await in async await it throw error
