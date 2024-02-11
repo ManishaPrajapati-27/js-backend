@@ -12,7 +12,7 @@ Communication between server and client is done by http.
 
 URL, URI, URN
 
-\*What are HTTP Headers
+## What are HTTP Headers
 
 1. Metadata -> Key value sent along with request and response
 2. Caching , Authentication, Manage state
@@ -22,7 +22,7 @@ URL, URI, URN
 5. Representation Headers -> Encoding/Compression
 6. Payload Headers -> Data(Send Data)
 
-\* Most Common Headers
+## Most Common Headers
 
 1. Accept : Application/Json
 2. User - Agent
@@ -31,20 +31,20 @@ URL, URI, URN
 5. Cookie
 6. Cache - Control
 
-\* CROS
+## CROS
 
 1. Access - Control - Allow - Origin
 2. Access - Control - Allow - Credential
 3. Access - Control - Allow - Method
 
-\* Security
+## Security
 
 1. CROS - Origin - Embedder - Policy
 2. CROS - Origin - Opener - Policy
 3. Content- Security - Policy
 4. X - XSS - Protection
 
-\* HTTP Methods
+## HTTP Methods
 
 Basic set of operations that can be used to interact with server
 
@@ -57,7 +57,7 @@ Basic set of operations that can be used to interact with server
 7. POST : Interact with resource(mostly add)
 8. PATCH : Change part of a resource
 
-\* HTTP Status code
+## HTTP Status code
 
 1xx - Informational
 2xx - Success
@@ -79,17 +79,55 @@ Basic set of operations that can be used to interact with server
 500 - Internal Server Error
 504 - Gateway time out
 
-#Middle Ware :- Before send the request we "check" somethings. The Check is called Middleare (Jaate hue mujhse mil ke jaana).
 
-# Use of Postman 
-    - Make new Collection
-    - Make new Environment
-    - Give name to environment then use it
-    - {{}} use variable in double curly brac
-    - Save 
 
-About Database Information
-/** Database always present in onather Continents **/
+## Middle Ware 
 
-1. If data is comes late then use await always.
-2. Remember always await in async await it throw error
+Before send the request we "check" somethings. The Check is called Middleare (Jaate hue mujhse mil ke jaana).
+
+## Use of Postman 
+1. Make new Collection
+2. Make new Environment
+3. Give name to environment then use it
+4. {{}} use variable in double curly brac
+5. Save 
+
+## About Database Information
+1. Database always present in onather Continents
+2. If you know data is take time to came then use await always.
+3. Remember always await in async await else it throw error
+
+## About Access token and Refresh token
+
+Access token is generate and it's expired fast.
+Refresh token is saved on Database and it's expired late as compare to access token.
+After login the user in cookies generate two token access and refresh respectivelly.
+If user send request then it match new access token to refresh token and give new refresh and access token.
+
+## Aggregation in MongoDB
+
+[
+    {
+
+$lookup: {
+    from:
+    localField:
+    foreiginField:
+    as:
+}
+    },
+    {
+        $addFields:{
+            author_details: {
+                $arrayElement : ["$author_details", 0]
+            }
+        }
+    }
+]
+
+
+
+
+
+
+
