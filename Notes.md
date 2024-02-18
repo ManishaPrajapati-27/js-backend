@@ -125,6 +125,11 @@ $lookup: {
     }
 ]
 
+In aggregate To add pipelines inside of pipeline we can add nested pipeline using "pipeline" keyword
+In aggregate pipelines mongoose is not work.
+
+
+
 
 
 
